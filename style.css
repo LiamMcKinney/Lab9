@@ -1,0 +1,21 @@
+th {
+    background-color: aquamarine;
+    border: 1px;
+}
+
+td {
+    background-color: aqua;
+    border: 1px;
+}
+
+form {
+    font-weight: normal;
+}
+
+p {
+    font-weight: normal;
+}
+
+body {
+    background-color: beige;
+}

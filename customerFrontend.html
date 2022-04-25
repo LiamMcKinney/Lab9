@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/> 
+</head>
+<body>
+    <script src="formChecker.js"></script>
+    <form action="customerBackend.php" method="post" onsubmit="return checkForm()">
+        Username: <input type="text" name="user"><br>
+        Password: <input type="password" name="pwd"><br>
+        # pebbles ($0.50): <input type="number" name="sm"><br>
+        # rocks ($1.00): <input type="number" name="md"><br>
+        # boulders ($10.00): <input type="number" name="lg"><br><br>
+
+        Shipping:
+        <p>
+        <input type="radio" name="ship" value="Free 7 day">Free 7 day<br>
+        <input type="radio" name="ship" value="over night">$50.00 over night<br>
+        <input type="radio" name="ship" value="3 day">$5.00 three day
+        </p>
+
+        <button type="button" onclick="resetForm()">Reset</button>
+
+        <input type="submit">
+    </form>
+</body>
+</html>
